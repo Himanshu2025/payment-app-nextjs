@@ -1,1 +1,14 @@
-import { Prisma } from "@prisma/client";
+import { Providers } from "./providers";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <div className={inter.className}>
+      <Providers>
+        {children}
+      </Providers>
+    </div>
+  );
+}

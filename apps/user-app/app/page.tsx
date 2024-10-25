@@ -1,9 +1,9 @@
-
+import {useBalance} from "@repo/store/useBalance"
 
 export default function Home() {
-  return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+  
+    const balance = useBalance(); 
+    return <div>
+      hi there {balance}
+    </div>
 }

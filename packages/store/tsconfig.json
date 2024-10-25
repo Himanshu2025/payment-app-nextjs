@@ -1,0 +1,12 @@
+{
+  "extends": "@repo/typescript-config/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",  // Ensures relative paths are resolved from the root of the store package
+    "paths": {
+      "@repo/*": ["./src/*"]  // Alias for easier imports
+    }
+  },
+  "include": ["src", "**/*.ts", "**/*.tsx"],  // Ensure .tsx files are also included if needed
+  "exclude": ["node_modules", "dist"]
+}

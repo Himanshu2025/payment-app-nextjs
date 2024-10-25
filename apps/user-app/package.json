@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@repo/db":"*"
+    "@repo/db": "*",
+    "bcrypt": "^5.1.1",
+    "next-auth": "^4.24.10"
   },
   "keywords": [],
   "author": "",
